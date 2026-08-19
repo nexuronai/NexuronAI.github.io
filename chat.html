@@ -682,7 +682,7 @@ async function loadConversations() {
 
   const data =
     await apiRequest(
-      "/api/conversations"
+      "https://bradyai-web.onrender.com/api/conversations"
     );
 
   conversationList.innerHTML = "";
@@ -841,7 +841,7 @@ async function createConversation(
 
   const data =
     await apiRequest(
-      "/api/conversations",
+      "https://bradyai-web.onrender.com/api/conversations",
       {
         method: "POST",
 
@@ -884,7 +884,7 @@ async function switchConversation(
 
     const data =
       await apiRequest(
-        `/api/conversations/${id}`
+        `https://bradyai-web.onrender.com/api/conversations/${id}`
       );
 
 
@@ -1019,7 +1019,7 @@ async function deleteConversation(
   try {
 
     await apiRequest(
-      `/api/conversations/${id}`,
+      `https://bradyai-web.onrender.com/api/conversations/${id}`,
       {
         method: "DELETE"
       }
@@ -1092,7 +1092,7 @@ async function updateConversationTitle(
     */
 
     await apiRequest(
-      `/api/conversations/${conversationId}`,
+      `https://bradyai-web.onrender.com/api/conversations/${conversationId}`,
       {
         method: "PATCH",
 
@@ -1151,7 +1151,7 @@ async function sendMessage(
 
     const conversationResponse =
       await apiRequest(
-        `/api/conversations/${conversationId}`
+        `https://bradyai-web.onrender.com/api/conversations/${conversationId}`
       );
 
     const isFirstMessage =
@@ -1164,7 +1164,7 @@ async function sendMessage(
     */
 
     await apiRequest(
-      `/api/conversations/${conversationId}/messages`,
+      `https://bradyai-web.onrender.com/api/conversations/${conversationId}/messages`,
       {
         method: "POST",
 
@@ -1195,7 +1195,7 @@ async function sendMessage(
 
     const response =
       await apiRequest(
-        "/api/chat",
+        "https://bradyai-web.onrender.com/api/chat",
         {
           method: "POST",
 
@@ -1229,7 +1229,7 @@ async function sendMessage(
     */
 
     await apiRequest(
-      `/api/conversations/${conversationId}/messages`,
+      `https://bradyai-web.onrender.com/api/conversations/${conversationId}/messages`,
       {
         method: "POST",
 
