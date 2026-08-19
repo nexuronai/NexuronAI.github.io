@@ -94,25 +94,9 @@ body::before {
 
 
 .logo-icon {
-    width: 34px;
-    height: 34px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 10px;
-
-    background: linear-gradient(
-        135deg,
-        #6d5dfc,
-        #8e7cff
-    );
-
-    box-shadow:
-        0 0 25px rgba(109,93,252,0.35);
-
-    font-weight: 800;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 
